@@ -5,12 +5,12 @@ import imutils
 import os
 
 # Load your image
-your_image_path = "dhia/dhia.jpg"
+your_image_path = "file_name/image.jpg"
 your_image = face_recognition.load_image_file(your_image_path)
 your_face_encoding = face_recognition.face_encodings(your_image)[0]
 
 # Path to the directory containing images
-image_directory = "dhia"
+image_directory = "file_of_photo"
 
 # Get a list of all image files in the directory
 image_files = [f for f in os.listdir(image_directory) if f.lower().endswith((".png", ".jpg", ".jpeg"))]
